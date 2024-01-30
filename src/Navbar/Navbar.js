@@ -12,7 +12,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="navbar">
+    <div className={`navbar ${menuOpened ? "opened" : ""}`}>
       <img className="logo" src={logo} alt="Remix-Gaming-Center-Logo" />
 
       <nav>
