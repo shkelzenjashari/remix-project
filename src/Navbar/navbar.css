@@ -68,9 +68,13 @@
     height: 30vh;
     text-align: center;
     display: none;
+    padding: 0px;
   }
-  .active {
+  .list .active {
     flex-direction: column;
+  }
+  .list ul {
+    padding: 0;
   }
 }
 
