@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./navbar.css";
 import logo from "../images/remixLOGO.png";
-import hamburgerMenu from "../images/hamburgerMenu.png";
+import hamburgerMenu from "../images/hamburgerMenu.jpg";
 
 const Navbar = () => {
   const [menuOpened, setMenuOpened] = useState(false);
