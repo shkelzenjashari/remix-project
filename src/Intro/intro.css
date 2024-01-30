@@ -1,0 +1,15 @@
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background-color: black;
+}
+.intro-text {
+  width: 75%;
+  text-align: center;
+}
+.intro-text p {
+  color: white;
+  font-size: 22px;
+}

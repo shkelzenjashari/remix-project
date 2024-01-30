@@ -14,8 +14,9 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <img className="logo" src={logo} alt="Remix-Gaming-Center-Logo" />
-      <div className={`list ${menuOpened ? "active" : ""}`}>
-        <ul className={`ul ${menuOpened ? "active" : ""}`}>
+
+      <nav>
+        <ul id="myMenu" className={`list ${menuOpened ? "opened" : ""}`}>
           <li>
             <Link to="#home">Home</Link>
           </li>
@@ -29,7 +30,7 @@ const Navbar = () => {
             <Link to="#faceit">Faceit Level</Link>
           </li>
         </ul>
-      </div>
+      </nav>
       <img
         className="hamburgerMenu"
         onClick={toggleMenu}
