@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./navbar.css";
 import logo from "../images/remixLOGO.png";
 import hamburgerMenu from "../images/hamburgerMenu.jpg";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [menuOpened, setMenuOpened] = useState(false);
@@ -16,13 +17,16 @@ const Navbar = () => {
       <div className={`list ${menuOpened ? "active" : ""}`}>
         <ul className={`ul ${menuOpened ? "active" : ""}`}>
           <li>
-            <a href="#home">Home</a>
+            <Link to="#home">Home</Link>
           </li>
           <li>
-            <a href="#about">About us</a>
+            <Link to="#about">About us</Link>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <Link to="#contact">Contact</Link>
+          </li>
+          <li>
+            <Link to="#faceit">Faceit Level</Link>
           </li>
         </ul>
       </div>

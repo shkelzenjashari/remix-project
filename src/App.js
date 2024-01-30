@@ -1,21 +1,15 @@
-import AboutUs from "./AboutUs/AboutUs";
-import Accordion from "./Accordion/Accordion";
-import CommonQuestions from "./CommonQuestions/CommonQuestions";
-import ContactUs from "./ContactUs/ContactUs";
-import Footer from "./Footer/Footer";
-import Intro from "./Intro/Intro";
-import Navbar from "./Navbar/Navbar";
+import React from "react";
+import Home from "./Pages/Home";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Intro />
-      <Accordion />
-      <AboutUs />
-      <CommonQuestions />
-      <ContactUs />
-      <Footer />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
