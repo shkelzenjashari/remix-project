@@ -1,15 +1,15 @@
 import React from "react";
 import Slider from "react-animated-slider";
 import "react-animated-slider/build/horizontal.css";
-import "./accordion.css";
+import "./photoSlider.css";
 import image1 from "../images/1.jpg";
 import image2 from "../images/2.jpg";
 import image3 from "../images/3.jpg";
 
-const Accordion = () => {
+const PhotoSlider = () => {
   const photos = [image1, image2, image3];
   return (
-    <div className="accordion">
+    <div className="photoSlider">
       <Slider autoplay={1500}>
         {photos.map((photo, index) => (
           <div key={index}>
@@ -21,4 +21,4 @@ const Accordion = () => {
   );
 };
 
-export default Accordion;
+export default PhotoSlider;
