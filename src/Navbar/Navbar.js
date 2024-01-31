@@ -18,16 +18,16 @@ const Navbar = () => {
       <nav>
         <ul id="myMenu" className={`list ${menuOpened ? "opened" : ""}`}>
           <li>
-            <Link to="#home">Home</Link>
+            <a href="#home">Home</a>
           </li>
           <li>
-            <Link to="#about">About us</Link>
+            <a href="#about">About us</a>
           </li>
           <li>
-            <Link to="#contact">Contact</Link>
+            <a href="#contact">Contact</a>
           </li>
           <li>
-            <Link to="#faceit">Faceit Level</Link>
+            <Link to="/faceit">Faceit Level</Link>
           </li>
         </ul>
       </nav>
