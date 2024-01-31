@@ -1,0 +1,33 @@
+.swipe {
+  padding-top: 5px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.swipe img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  animation: rotateAnimation 2s linear infinite;
+}
+
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(60deg);
+  }
+  50% {
+    transform: rotate(80deg);
+  }
+  100% {
+    transform: rotate(60deg);
+  }
+}
+
+@media (max-width: 790px) {
+  .test img {
+    animation: none;
+    transform: rotate(80deg);
+  }
+}
