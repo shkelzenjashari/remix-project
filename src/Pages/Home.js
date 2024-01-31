@@ -6,6 +6,7 @@ import AboutUs from "../AboutUs/AboutUs";
 import CommonQuestions from "../CommonQuestions/CommonQuestions";
 import ContactUs from "../ContactUs/ContactUs";
 import Footer from "../Footer/Footer";
+import Test from "../Accordion/Test";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Navbar />
       <Intro />
       <Accordion />
+      <Test />
       <AboutUs />
       <CommonQuestions />
       <ContactUs />
