@@ -6,10 +6,7 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-<<<<<<< HEAD
-=======
     "bootstrap": "^5.3.2",
->>>>>>> b96685ae9b80d34b1b650363da7cdac4da481f0d
     "gsap": "^3.12.5",
     "imagesloaded": "^5.0.0",
     "react": "^18.2.0",
