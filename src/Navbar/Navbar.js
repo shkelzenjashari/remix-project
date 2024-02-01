@@ -13,8 +13,9 @@ const Navbar = () => {
 
   return (
     <div className={`navbar ${menuOpened ? "opened" : ""}`}>
-      <img className="logo" src={logo} alt="Remix-Gaming-Center-Logo" />
-
+      <a href="#home">
+        <img className="logo" src={logo} alt="Remix-Gaming-Center-Logo" />
+      </a>
       <nav>
         <ul id="myMenu" className={`list ${menuOpened ? "opened" : ""}`}>
           <li>

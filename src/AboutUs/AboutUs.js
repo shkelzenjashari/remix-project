@@ -10,12 +10,13 @@ const AboutUs = () => {
       </div>
       <div className="second-part">
         <h1>About us</h1>
-        <p>
-          With years of experience in the industry, we strive to be the best in
-          our field and put our customers first. Our team is passionate about
-          building relationships with each and every one of you and creating an
-          environment where everyone feels welcome.Thank you for choosing us as
-          your go-to provider; we look forward to serving you!
+        <p className="firstP">
+          With 24 years of experience in the industry, we always put our
+          customers first. Our team is passionate about building relationships
+          with each and every one of you.
+        </p>
+        <p className="secondP">
+          We have an environment where everyone feels home!
         </p>
       </div>
     </div>

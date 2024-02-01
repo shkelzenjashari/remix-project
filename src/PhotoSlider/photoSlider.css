@@ -3,12 +3,12 @@
   max-width: 100%;
   height: auto;
 }
-.accordion {
+.photoSlider {
   background-color: black;
   width: 100%;
   height: 700px;
 }
-.accordion img {
+.photoSlider img {
   width: 70%;
   margin-left: 15%;
 }
@@ -19,24 +19,24 @@ polygon {
   height: 100%;
 }
 @media (max-width: 1600px) {
-  .accordion {
+  .photoSlider {
     height: 600px;
   }
 }
 @media (max-width: 1400px) {
-  .accordion {
+  .photoSlider {
     height: 550px;
     padding-bottom: 20px;
   }
 }
 @media (max-width: 1200px) {
-  .accordion {
+  .photoSlider {
     height: 450px;
     padding-bottom: 20px;
   }
 }
 @media (max-width: 900px) {
-  .accordion {
+  .photoSlider {
     height: 300px;
     padding-bottom: 20px;
   }
@@ -47,7 +47,7 @@ polygon {
   }
 }
 @media (max-width: 768px) {
-  .accordion {
+  .photoSlider {
     height: 300px;
     padding: 0;
   }

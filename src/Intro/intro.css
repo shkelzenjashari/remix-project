@@ -9,7 +9,19 @@
   width: 75%;
   text-align: center;
 }
+.main-text {
+  font-size: 35px !important;
+}
 .intro-text p {
   color: white;
-  font-size: 22px;
+  font-size: 30px;
+}
+
+@media (max-width: 768px) {
+  .intro-text p {
+    font-size: 25px;
+  }
+  .main-text {
+    font-size: 30px;
+  }
 }
