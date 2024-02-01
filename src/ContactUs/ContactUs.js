@@ -7,9 +7,9 @@ const ContactUs = () => {
       <div className="first-partc">
         <h1>Contact Us</h1>
         <p>
-          Reach out to us using the contact form below. We look forward to
-          hearing from you and assisting you with any inquiries or feedback you
-          may have.
+          Reach out to us using the contact form below. <br /> We look forward
+          to hearing from you and assisting you with any inquiries or feedback
+          you may have.
         </p>
       </div>
       <div className="second-partc">
