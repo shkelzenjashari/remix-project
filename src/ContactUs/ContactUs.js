@@ -13,17 +13,26 @@ const ContactUs = () => {
         </p>
       </div>
       <div className="second-partc">
-        <div className="form-first">
-          <label for="name">Name</label>
-          <input type="name" id="name" />
+        <form>
+          <div className="form-first">
+            <label for="name">Name</label>
+            <input type="name" id="name" />
 
-          <label for="email">Email</label>
-          <input type="email" id="email" />
-        </div>
-        <div className="form-second">
-          <label for="message">Message</label>
-          <textarea id="message"></textarea>
-        </div>
+            <label for="email">Email</label>
+            <input type="email" id="email" />
+          </div>
+          <div className="form-second">
+            <label for="message">Message</label>
+            <textarea id="message"></textarea>
+          </div>
+          <div className="form-third">
+            <p>
+              This site is protected by reCAPTCHA and the Google <br /> Privacy
+              Policy and Terms of Service apply.
+            </p>
+            <button type="submit">Send</button>
+          </div>
+        </form>
       </div>
     </div>
   );
