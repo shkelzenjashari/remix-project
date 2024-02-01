@@ -31,6 +31,11 @@
   font-size: 21px;
   text-align: start;
 }
+.secondP {
+  font-size: 25px !important;
+  margin-top: 15px;
+  text-align: center !important;
+}
 @media (max-width: 1200px) {
   .second-part p {
     font-size: 19px;
@@ -49,6 +54,14 @@
     padding: 15px;
   }
   .second-part h1 {
-    text-align: start;
+    text-align: center;
+  }
+  .firstP {
+    text-align: center;
+  }
+  .secondP {
+    text-align: center !important;
+    margin-top: 15px;
+    font-size: 25px !important;
   }
 }
