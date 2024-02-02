@@ -10,22 +10,8 @@ import ertural from "../images/ertural.jpg";
 const Reviews = () => {
   return (
     <div className="reviews-wrapper">
-      <h1 className="reviews-headline">Reviews</h1>
+      <h1 className="reviews-headline">Vleresimet</h1>
       <div className="reviews">
-        <div className="review">
-          <img className="star" src={star} alt="stars" />
-          <p>"Another level"</p>
-          <div className="profile">
-            <a href="https://maps.app.goo.gl/VTxqnbtfoe34M5zQ8" target="_blank">
-              <img className="avatar" src={erlind} alt="profile" />
-            </a>
-            <p>Erlind Behrami</p>
-          </div>
-          <a href="https://maps.app.goo.gl/VTxqnbtfoe34M5zQ8" target="_blank">
-            Read more
-          </a>
-        </div>
-
         <div className="review">
           <img className="star" src={star} alt="stars" />
           <p>"🔥…"</p>
@@ -36,7 +22,7 @@ const Reviews = () => {
             <p>Arlind Dubova</p>
           </div>
           <a href="https://maps.app.goo.gl/MbaCtnkMGxqQaMqZ9" target="_blank">
-            Read more
+            Lexo me shume
           </a>
         </div>
 
@@ -50,7 +36,21 @@ const Reviews = () => {
             <p>Arvanit Shahini</p>
           </div>
           <a href="https://maps.app.goo.gl/UANaWzBP6QQYvMra8" target="_blank">
-            Read more
+            Lexo me shume
+          </a>
+        </div>
+
+        <div className="review">
+          <img className="star" src={star} alt="stars" />
+          <p>"Another level"</p>
+          <div className="profile">
+            <a href="https://maps.app.goo.gl/VTxqnbtfoe34M5zQ8" target="_blank">
+              <img className="avatar" src={erlind} alt="profile" />
+            </a>
+            <p>Erlind Behrami</p>
+          </div>
+          <a href="https://maps.app.goo.gl/VTxqnbtfoe34M5zQ8" target="_blank">
+            Lexo me shume
           </a>
         </div>
 
@@ -67,7 +67,7 @@ const Reviews = () => {
             <p>Ertural Koliqi</p>
           </div>
           <a href="https://www.google.com" target="_blank">
-            Read more
+            Lexo me shume
           </a>
         </div>
       </div>
@@ -83,7 +83,7 @@ const Reviews = () => {
             <p>Name Surname</p>
           </div>
           <a href="https://www.google.com" target="_blank">
-            Read more
+            Lexo me shume
           </a>
         </div>
 
@@ -97,7 +97,7 @@ const Reviews = () => {
             <p>Name Surname</p>
           </div>
           <a href="https://www.google.com" target="_blank">
-            Read more
+            Lexo me shume
           </a>
         </div>
 
@@ -111,7 +111,7 @@ const Reviews = () => {
             <p>Name Surname</p>
           </div>
           <a href="https://www.google.com" target="_blank">
-            Read more
+            Lexo me shume
           </a>
         </div>
 
@@ -125,7 +125,7 @@ const Reviews = () => {
             <p>Name Surname</p>
           </div>
           <a href="https://www.google.com" target="_blank">
-            Read more
+            Lexo me shume
           </a>
         </div>
       </div> */}
