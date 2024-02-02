@@ -13,19 +13,19 @@ const Navbar = () => {
 
   return (
     <div className={`navbar ${menuOpened ? "opened" : ""}`}>
-      <a href="#home">
+      <a href="/">
         <img className="logo" src={logo} alt="Remix-Gaming-Center-Logo" />
       </a>
       <nav>
         <ul id="myMenu" className={`list ${menuOpened ? "opened" : ""}`}>
           <li>
-            <a href="#home">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="#about">About us</a>
+            <Link to="/about">About us</Link>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <Link to="/contact">Contact</Link>
           </li>
           <li>
             <Link to="/faceit">Faceit Level</Link>
