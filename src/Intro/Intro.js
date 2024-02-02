@@ -7,8 +7,8 @@ const Intro = () => {
       <div className="intro-text">
         <p className="main-text">Remix Gaming Center</p>
         <p>
-          is the ultimate destination for gaming enthusiasts in Kosovo and is
-          located in the heart of Kosovo.
+          eshte destinacioni i preferuar per te gjithe entuziastet e lojerave ne
+          Kosove dhe ndodhet ne zemer te Prishtines.
         </p>
       </div>
     </div>

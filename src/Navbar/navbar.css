@@ -26,13 +26,19 @@
   display: none;
 }
 
-@media (min-width: 847) {
+@media (max-width: 945px) {
+  .list {
+    padding: 0 !important;
+  }
+}
+
+@media (min-width: 895px) {
   .hamburgerMenu {
     display: none;
   }
 }
 
-@media (max-width: 847px) {
+@media (max-width: 894px) {
   .navbar.opened {
     padding-bottom: 160px;
     margin: 0;

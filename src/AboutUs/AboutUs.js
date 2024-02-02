@@ -9,14 +9,14 @@ const AboutUs = () => {
         <img src={logo} alt="logo" />
       </div>
       <div className="second-part">
-        <h1>About us</h1>
+        <h1>Rreth nesh</h1>
         <p className="firstP">
-          With 24 years of experience in the industry, we always put our
-          customers first. Our team is passionate about building relationships
-          with each and every one of you.
+          Me pervoje 24 vjecare ne industri, ne gjithmone vendosim klientet tane
+          te paret. Perfomanca me e larte, pastertia dhe mikpritja jane disa nga
+          gjerat qe na karakterizojne.
         </p>
         <p className="secondP">
-          We have an environment where everyone feels home!
+          Ne e kemi ambientin ku te gjithe ndihen si ne shtepi!
         </p>
       </div>
     </div>
