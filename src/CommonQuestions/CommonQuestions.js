@@ -31,7 +31,7 @@ const CommonQuestions = () => {
           </AccordionSummary>
           <AccordionDetails>
             <p>
-              Lokacioni eshte ne lagjen Tophane, Prishtine.
+              Tophane, Prishtine. <br />
               <a
                 href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x13549f214c9cabb1:0xb223c9c6e50d4cea?source=g.page.share"
                 target="_blank"
