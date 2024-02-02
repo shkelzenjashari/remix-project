@@ -16,7 +16,7 @@ const AboutUs = () => {
           gjerat qe na karakterizojne.
         </p>
         <p className="secondP">
-          Ne e kemi ambientin ku te gjithe ndihen si ne shtepi!
+          Ne e kemi ambientin ku te gjithe ndihen rehat si ne shtepi!
         </p>
       </div>
     </div>
