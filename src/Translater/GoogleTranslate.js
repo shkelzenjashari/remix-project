@@ -1,6 +1,8 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 const GoogleTranslate = () => {
+  const [currentLanguage, setCurrentLanguage] = useState("en"); // Default to English
+
   useEffect(() => {
     const loadGoogleTranslateScript = () => {
       const script = document.createElement("script");
@@ -16,7 +18,7 @@ const GoogleTranslate = () => {
         {
           defaultLanguage: "en",
           pageLanguage: "en",
-          includedLanguages: "sq", // Albanian language code
+          includedLanguages: "sq,en", // Albanian and English language codes
         },
         "google_translate_element"
       );
@@ -26,24 +28,19 @@ const GoogleTranslate = () => {
   }, []);
 
   const handleTranslate = () => {
-    // Clear the content of the translation element
-    const translateElement = document.getElementById(
-      "google_translate_element"
-    );
-    translateElement.innerHTML = "";
+    const newLanguage = currentLanguage === "en" ? "sq" : "en";
+    setCurrentLanguage(newLanguage);
 
-    // Create a new script element to simulate script reload
-    const script = document.createElement("script");
-    script.type = "text/javascript";
-    script.src =
-      "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
-    document.head.appendChild(script);
+    // Change the target language for the entire page
+    window.google.translate.translatePage(newLanguage);
   };
 
   return (
     <div>
       <div id="google_translate_element"></div>
-      <button onClick={handleTranslate}>Translate Website to Albanian</button>
+      <button onClick={handleTranslate}>
+        Translate Website to {currentLanguage === "en" ? "Albanian" : "English"}
+      </button>
     </div>
   );
 };
