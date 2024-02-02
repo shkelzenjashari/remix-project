@@ -17,7 +17,7 @@ const Home = () => {
       <AboutUs />
       <CommonQuestions />
       <ContactUs />
-      {/* <GoogleMaps /> */}
+      <GoogleMaps />
       <Footer />
     </div>
   );
