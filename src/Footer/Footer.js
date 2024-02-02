@@ -16,10 +16,39 @@ const Footer = () => {
         </a>
       </div>
       <div className="second">
-        <p>Follow us on socials:</p>
+        <p>All rights reserved.</p>
+      </div>
+      <div className="third">
         <div className="footer-social">
           <a href="https://www.facebook.com/remixgamingcenter" target="_blank">
-            <img src={facebook} alt="facebook-logo" />
+            <img src={facebook} className="footer-image" alt="facebook-logo" />
+          </a>
+        </div>
+        <div className="footer-social">
+          <a href="https://www.instagram.com/remixgamingcenter" target="_blank">
+            <img
+              src={instagram}
+              className="footer-image"
+              alt="instagram-logo"
+            />
+          </a>
+        </div>
+
+        <div className="footer-social">
+          <a href="https://www.tiktok.com/@remixgamingcenter" target="_blank">
+            <img src={tiktok} className="footer-image" alt="tiktok-logo" />
+          </a>
+        </div>
+
+        <div className="footer-social">
+          <a href="https://www.discord.gg/tKH33ZX" target="_blank">
+            <img src={discord} className="footer-image" alt="discord-logo" />
+          </a>
+        </div>
+
+        <div className="footer-social">
+          <a href="https://www.twitch.tv/remixgamingcenter" target="_blank">
+            <img src={twitch} className="footer-image" alt="twitch-logo" />
           </a>
         </div>
       </div>

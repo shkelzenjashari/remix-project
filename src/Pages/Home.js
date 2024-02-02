@@ -8,8 +8,6 @@ import Footer from "../Footer/Footer";
 import PhotoSlider from "../PhotoSlider/PhotoSlider";
 import GoogleMaps from "../GoogleMaps/GoogleMaps";
 
-
-
 const Home = () => {
   return (
     <div>
@@ -19,11 +17,9 @@ const Home = () => {
       <AboutUs />
       <CommonQuestions />
       <ContactUs />
-      <GoogleMaps />
       <Footer />
     </div>
   );
 };
-
 
 export default Home;
