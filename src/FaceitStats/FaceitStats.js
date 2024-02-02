@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import "./faceitStats.css";
 import { useEffect } from "react";
 import Navbar from "../Navbar/Navbar.js";
+import FaceitPlayer from "./FaceitPlayer";
+
+//http://api.faceit.myhosting.info:81/?n=PLAYERNAME
 
 const FaceitStats = () => {
+  const [keyword, setKeyword] = useState("");
   useEffect(() => {
-    fetch("http://api.faceit.myhosting.info:81/?n=NEMPITO)")
+    fetch(`http://api.faceit.myhosting.info:81/?n=${keyword})`)
       .then((res) => {
         return res.json();
       })
@@ -13,9 +17,11 @@ const FaceitStats = () => {
         console.log(data);
       });
   }, []);
+
   return (
     <div>
-      <Navbar /> {/* change <a> to Link */}
+      <Navbar />
+      <FaceitPlayer />
     </div>
   );
 };
