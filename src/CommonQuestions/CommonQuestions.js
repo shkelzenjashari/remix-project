@@ -19,7 +19,7 @@ const CommonQuestions = () => {
           <AccordionDetails>
             <p>
               Per rezervime mund te na kontaktoni permes numrit te telefonit :
-              049160599
+              <a href="tel:049160599"> 049160599 </a>
             </p>
           </AccordionDetails>
         </Accordion>
@@ -32,7 +32,10 @@ const CommonQuestions = () => {
           <AccordionDetails>
             <p>
               Lokacioni eshte ne lagjen Tophane, Prishtine.
-              <a href=" g.page/remix-gaming-center?share" target="_blank">
+              <a
+                href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x13549f214c9cabb1:0xb223c9c6e50d4cea?source=g.page.share"
+                target="_blank"
+              >
                 Per directions kliko ketu
               </a>
             </p>
