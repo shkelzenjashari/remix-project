@@ -4,7 +4,7 @@
   height: 560px;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   padding-bottom: 40px;
 }
 label {
@@ -16,8 +16,8 @@ label {
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  padding: 15px;
   text-align: start;
+  padding-left: 60px;
 }
 .first-partc h1 {
   font-size: 50px;
@@ -95,6 +95,7 @@ label {
     align-items: center;
     margin-bottom: 50px;
     text-align: center;
+    padding: 0;
   }
   .second-partc {
     width: 100%;
