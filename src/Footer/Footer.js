@@ -17,7 +17,8 @@ const Footer = () => {
       </div>
       <div className="second">
         <p>
-          2000 - 2024 © <br /> All rights reserved® <br /> Remix Gaming Center.
+          2000 - 2024 <br /> Remix Gaming Center <br /> Te gjitha te drejtat e
+          rezervuara ©
         </p>
       </div>
       <div className="third">

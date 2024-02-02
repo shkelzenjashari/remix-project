@@ -5,32 +5,32 @@ const ContactUs = () => {
   return (
     <div id="contact">
       <div className="first-partc">
-        <h1>Contact Us</h1>
+        <h1>Na kontakto</h1>
         <p>
-          Reach out to us using the contact form below. <br /> We look forward
-          to hearing from you and assisting you with any inquiries or feedback
-          you may have.
+          Na kontaktoni duke shkruar te dhenat e juaja. <br />
+          Ne jemi te hapur per <br /> pytje dhe kritika
         </p>
       </div>
       <div className="second-partc">
         <form>
           <div className="form-first">
-            <label for="name">Name</label>
+            <label for="name">Emri</label>
             <input type="name" id="name" />
 
             <label for="email">Email</label>
             <input type="email" id="email" />
           </div>
           <div className="form-second">
-            <label for="message">Message</label>
+            <label for="message">Mesazhi</label>
             <textarea id="message"></textarea>
           </div>
           <div className="form-third">
             <p>
-              This site is protected by reCAPTCHA <br /> and the Google Privacy
-              Policy <br /> and Terms of Service apply.
+              Kjo faqe mbrohet nga reCAPTCHA <br />
+              dhe Politikën e Privatësisë së Google <br />
+              dhe zbatohen Kushtet e Shërbimit.
             </p>
-            <button type="submit">Send</button>
+            <button type="submit">Dergo</button>
           </div>
         </form>
       </div>
