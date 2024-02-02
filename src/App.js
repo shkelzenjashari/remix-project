@@ -10,7 +10,7 @@ import GoogleTranslate from "./Translater/GoogleTranslate";
 function App() {
   return (
     <div className="App">
-      {/* <GoogleTranslate />  */}
+      <GoogleTranslate />
 
       <Router>
         <Routes>
