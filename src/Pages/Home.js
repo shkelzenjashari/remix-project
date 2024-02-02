@@ -16,8 +16,9 @@ const Home = () => {
       <PhotoSlider />
       <AboutUs />
       <CommonQuestions />
-      <ContactUs />
       <Reviews />
+      <ContactUs />
+
       <Footer />
     </div>
   );
