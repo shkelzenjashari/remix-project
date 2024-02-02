@@ -5,6 +5,7 @@ import Navbar from "../Navbar/Navbar.js";
 import FaceitPlayer from "./FaceitPlayer";
 import Search from "./Search";
 import Footer from "../Footer/Footer";
+import NavbarFaceit from "./NavbarFaceit";
 
 //http://api.faceit.myhosting.info:81/?n=PLAYERNAME
 //http://api.faceit.myhosting.info:81/?n=${keyword})
@@ -26,7 +27,7 @@ const FaceitStats = () => {
 
   return (
     <div>
-      <Navbar />
+      <NavbarFaceit />
       <Search keyword={keyword} />
       <FaceitPlayer />
       <Footer />

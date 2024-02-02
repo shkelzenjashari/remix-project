@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import "./navbar.css";
+import "../Navbar/navbar.css";
 import logo from "../images/remixLOGO.png";
 import hamburgerMenu from "../images/hamburgerMenu.jpg";
 import { Link } from "react-router-dom";
 
-const Navbar = () => {
+const NavbarFaceit = () => {
   const [menuOpened, setMenuOpened] = useState(false);
 
   const toggleMenu = () => {
@@ -22,12 +22,6 @@ const Navbar = () => {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="#about">About us</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-          <li>
             <Link to="/faceit">Faceit Level</Link>
           </li>
         </ul>
@@ -42,4 +36,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavbarFaceit;

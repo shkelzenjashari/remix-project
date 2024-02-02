@@ -16,7 +16,9 @@ const Footer = () => {
         </a>
       </div>
       <div className="second">
-        <p>All rights reserved.</p>
+        <p>
+          2000 - 2024 © <br /> All rights reserved® <br /> Remix Gaming Center.
+        </p>
       </div>
       <div className="third">
         <div className="footer-social">
