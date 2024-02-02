@@ -6,6 +6,7 @@ import CommonQuestions from "../CommonQuestions/CommonQuestions";
 import ContactUs from "../ContactUs/ContactUs";
 import Footer from "../Footer/Footer";
 import PhotoSlider from "../PhotoSlider/PhotoSlider";
+import GoogleMaps from "../GoogleMaps/GoogleMaps";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <AboutUs />
       <CommonQuestions />
       <ContactUs />
+      {/* <GoogleMaps /> */}
       <Footer />
     </div>
   );
