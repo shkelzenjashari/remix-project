@@ -8,6 +8,8 @@ import Footer from "../Footer/Footer";
 import PhotoSlider from "../PhotoSlider/PhotoSlider";
 import GoogleMaps from "../GoogleMaps/GoogleMaps";
 
+
+
 const Home = () => {
   return (
     <div>
@@ -22,5 +24,6 @@ const Home = () => {
     </div>
   );
 };
+
 
 export default Home;
