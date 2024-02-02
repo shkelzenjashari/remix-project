@@ -1,6 +1,7 @@
 import React from "react";
-import { Link, Route } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import "./errorPage.css";
+import Navbar from "../Navbar/Navbar";
 
 const ErrorPage = () => {
   let navigate = useNavigate();
@@ -9,9 +10,11 @@ const ErrorPage = () => {
     navigate("/");
   };
   return (
-    <div>
-      <h1>404: Page not found</h1>
-      <button onClick={handleClick}>Kthehu ne homepage</button>
+    <div className="errorPage">
+      <div className="items">
+        <h1>Error 404: Page not found</h1>
+        <button onClick={handleClick}>Kthehu ne homepage</button>
+      </div>
     </div>
   );
 };

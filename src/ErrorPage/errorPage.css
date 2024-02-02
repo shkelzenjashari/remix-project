@@ -1,0 +1,31 @@
+.errorPage {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url(../images//remixLOGO.png) no-repeat;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.items {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 17px;
+}
+.items h1 {
+  color: black;
+}
+button {
+  font-family: "BankGothic Md BT", sans-serif;
+  background-color: rgb(230, 230, 230);
+  color: rgb(17, 24, 39);
+  border-radius: 8px;
+  border-color: rgb(230, 230, 230);
+  font-size: 18px;
+}
