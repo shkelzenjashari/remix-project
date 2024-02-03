@@ -11,27 +11,29 @@ import NavbarFaceit from "./NavbarFaceit";
 //http://api.faceit.myhosting.info:81/?n=${keyword})
 
 const FaceitStats = () => {
-  const [keyword, setKeyword] = useState("");
   const [player, setPlayer] = useState({});
-  useEffect(() => {
-    fetch("http://api.faceit.myhosting.info:81/?n=nexito")
-      .then((res) => {
-        return res.json();
-      })
-      .then((data) => {
-        console.log(data);
-        // setPlayer(data);
-        // console.log(player);
-      });
-  }, []);
+
+  // useEffect(() => {
+  //   fetch("http://api.faceit.myhosting.info:81/?n=nexito")
+  //     .then((res) => {
+  //       return res.json();
+  //     })
+  //     .then((data) => {
+  //       console.log(data);
+  //       setPlayer(data);
+  //       console.log(player);
+  //     });
+  // }, []);
 
   return (
-    <div>
+    <>
       <NavbarFaceit />
-      <Search keyword={keyword} />
-      <FaceitPlayer />
+      <div className="faceitStats">
+        <Search keyword={keyword} />
+        <FaceitPlayer player={player} keyword={keyword} />
+      </div>
       <Footer />
-    </div>
+    </>
   );
 };
 
