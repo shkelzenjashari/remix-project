@@ -5,3 +5,20 @@
   align-items: center;
   flex-direction: column;
 }
+.search {
+  height: 36vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-component h1 {
+  margin-bottom: 10px;
+}
+.hero-component {
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
