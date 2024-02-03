@@ -3,9 +3,9 @@ import Home from "./Pages/Home";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import FaceitStats from "./FaceitStats/FaceitStats";
 import ErrorPage from "./ErrorPage/ErrorPage";
-import AboutUs from "./AboutUs/AboutUs";
-import ContactUs from "./ContactUs/ContactUs";
-import GoogleTranslate from "./Translater/GoogleTranslate";
+// import AboutUs from "./AboutUs/AboutUs";
+// import ContactUs from "./ContactUs/ContactUs";
+// import GoogleTranslate from "./Translater/GoogleTranslate";
 
 function App() {
   return (

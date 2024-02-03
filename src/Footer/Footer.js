@@ -23,12 +23,20 @@ const Footer = () => {
       </div>
       <div className="third">
         <div className="footer-social">
-          <a href="https://www.facebook.com/remixgamingcenter" target="_blank">
+          <a
+            href="https://www.facebook.com/remixgamingcenter"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src={facebook} className="footer-image" alt="facebook-logo" />
           </a>
         </div>
         <div className="footer-social">
-          <a href="https://www.instagram.com/remixgamingcenter" target="_blank">
+          <a
+            href="https://www.instagram.com/remixgamingcenter"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img
               src={instagram}
               className="footer-image"
@@ -38,19 +46,31 @@ const Footer = () => {
         </div>
 
         <div className="footer-social">
-          <a href="https://www.tiktok.com/@remixgamingcenter" target="_blank">
+          <a
+            href="https://www.tiktok.com/@remixgamingcenter"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src={tiktok} className="footer-image" alt="tiktok-logo" />
           </a>
         </div>
 
         <div className="footer-social">
-          <a href="https://www.discord.gg/CUdZBJKABm" target="_blank">
+          <a
+            href="https://www.discord.gg/CUdZBJKABm"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src={discord} className="footer-image" alt="discord-logo" />
           </a>
         </div>
 
         <div className="footer-social">
-          <a href="https://www.twitch.tv/remixgamingcenter" target="_blank">
+          <a
+            href="https://www.twitch.tv/remixgamingcenter"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src={twitch} className="footer-image" alt="twitch-logo" />
           </a>
         </div>

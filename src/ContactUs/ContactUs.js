@@ -14,14 +14,14 @@ const ContactUs = () => {
       <div className="second-partc">
         <form>
           <div className="form-first">
-            <label for="name">Emri</label>
+            <label htmlFor="name">Emri</label>
             <input type="name" id="name" />
 
-            <label for="email">Email</label>
+            <label htmlFor="email">Email</label>
             <input type="email" id="email" />
           </div>
           <div className="form-second">
-            <label for="message">Mesazhi</label>
+            <label htmlFor="message">Mesazhi</label>
             <textarea id="message"></textarea>
           </div>
           <div className="form-third">
