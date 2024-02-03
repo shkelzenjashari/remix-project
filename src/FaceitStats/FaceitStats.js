@@ -3,7 +3,6 @@ import "./faceitStats.css";
 import { useEffect } from "react";
 import Navbar from "../Navbar/Navbar.js";
 import FaceitPlayer from "./FaceitPlayer";
-import Search from "./Search";
 import Footer from "../Footer/Footer";
 import NavbarFaceit from "./NavbarFaceit";
 
@@ -11,6 +10,7 @@ import NavbarFaceit from "./NavbarFaceit";
 //http://api.faceit.myhosting.info:81/?n=${keyword})
 
 const FaceitStats = () => {
+  const [keyword, setKeyword] = useState("");
   const [player, setPlayer] = useState({});
 
   // useEffect(() => {
@@ -29,7 +29,11 @@ const FaceitStats = () => {
     <>
       <NavbarFaceit />
       <div className="faceitStats">
-        <Search keyword={keyword} />
+        <div className="search">
+          <div className="hero-component">
+            <input type="text" value={keyword} />
+          </div>
+        </div>
         <FaceitPlayer player={player} keyword={keyword} />
       </div>
       <Footer />
