@@ -44,7 +44,7 @@ const Footer = () => {
         </div>
 
         <div className="footer-social">
-          <a href="https://www.discord.gg/tKH33ZX" target="_blank">
+          <a href="https://www.discord.gg/CUdZBJKABm" target="_blank">
             <img src={discord} className="footer-image" alt="discord-logo" />
           </a>
         </div>
