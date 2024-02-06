@@ -6,21 +6,42 @@ import FaceitPlayer from "./FaceitPlayer";
 import Footer from "../Footer/Footer";
 import NavbarFaceit from "./NavbarFaceit";
 
-//http://api.faceit.myhosting.info:81/?n=PLAYERNAME
+//https://open.faceit.com/data/v4/players?nickname=nexito&game=CS2
+//`https://open.faceit.com/data/v4/players?nickname=${keyword}&game=CS2`
+
 const FaceitStats = () => {
   const [keyword, setKeyword] = useState("");
   const [player, setPlayer] = useState("");
+  let apiKey = "82954729-1074-4a8d-b50e-460c0e719288";
 
-  // const fetchApiData = () => {
-  //   fetch(`http://api.faceit.myhosting.info:81/?n=${keyword}`)
-  //     .then((res) => {
-  //       return res.json();
-  //     })
-  //     .then((data) => {
-  //       console.log(data);
-  //       setPlayer(data);
-  //       console.log(player);
-  //     });
+  const fetchApiData = () => {
+    const apiKey = "82954729-1074-4a8d-b50e-460c0e719288";
+    const headers = {
+      Authorization: `Bearer ${apiKey}`,
+    };
+
+    fetch(
+      `https://open.faceit.com/data/v4/players?nickname=${keyword}&game=CS2`,
+      {
+        method: "GET",
+        headers: headers,
+      }
+    )
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error("Network response was not ok");
+        }
+        return res.json();
+      })
+      .then((data) => {
+        console.log(data);
+        setPlayer(data);
+        console.log(player);
+      })
+      .catch((error) => {
+        console.error("There was a problem with the fetch operation:", error);
+      });
+  };
 
   return (
     <>
@@ -34,10 +55,10 @@ const FaceitStats = () => {
               value={keyword}
               onChange={(evt) => setKeyword(evt.target.value)}
             />
-            {/* {<button onClick={() => fetchApiData()}>Kerko</button>} */}
+            {<button onClick={() => fetchApiData()}>Kerko</button>}
           </div>
         </div>
-        {<FaceitPlayer player={player} keyword={keyword} />}
+        <FaceitPlayer player={player} keyword={keyword} />
       </div>
       <Footer />
     </>

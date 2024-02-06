@@ -13,7 +13,7 @@ const FaceitPlayer = ({ player, keyword }) => {
   let lvl9 = 1751;
   let lvl10 = 2001;
 
-  let playerElo = player.elo;
+  let playerElo = player ? player.games.cs2.faceit_elo : null;
   let playerLvl;
   let eloToNextLevel;
 
@@ -65,10 +65,18 @@ const FaceitPlayer = ({ player, keyword }) => {
 
   return (
     <div className="faceitPlayer">
-      <h1>{keyword}</h1>
-      <p>Level : {playerLvl}</p>
-      <p>Elo : {playerElo}</p>
-      <p>Elo to Next Level: {eloToNextLevel}</p>
+      {player && (
+        <>
+          <h1>{keyword}</h1>
+          <p>Level : {playerLvl}</p>
+          <p>Elo : {playerElo}</p>
+          {playerLvl !== "Level 10" ? (
+            <p>Elo to Next Level: {eloToNextLevel}</p>
+          ) : (
+            <p>You reached the max level!</p>
+          )}
+        </>
+      )}
     </div>
   );
 };
