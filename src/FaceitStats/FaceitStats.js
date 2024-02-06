@@ -12,6 +12,8 @@ import NavbarFaceit from "./NavbarFaceit";
 const FaceitStats = () => {
   const [keyword, setKeyword] = useState("");
   const [player, setPlayer] = useState("");
+  const [error, setError] = useState("");
+
   let apiKey = "82954729-1074-4a8d-b50e-460c0e719288";
 
   const fetchApiData = () => {
@@ -28,15 +30,17 @@ const FaceitStats = () => {
       }
     )
       .then((res) => {
+        if (res.status === 400) {
+        }
         if (!res.ok) {
           throw new Error("Network response was not ok");
+          setError("Network response error");
         }
         return res.json();
       })
       .then((data) => {
-        console.log(data);
         setPlayer(data);
-        console.log(player);
+        console.log("player", data);
       })
       .catch((error) => {
         console.error("There was a problem with the fetch operation:", error);
@@ -58,7 +62,7 @@ const FaceitStats = () => {
             {<button onClick={() => fetchApiData()}>Kerko</button>}
           </div>
         </div>
-        <FaceitPlayer player={player} keyword={keyword} />
+        <FaceitPlayer player={player} keyword={keyword} error={error} />
       </div>
       <Footer />
     </>

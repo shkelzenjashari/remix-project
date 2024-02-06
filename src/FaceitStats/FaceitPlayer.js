@@ -1,7 +1,7 @@
 import React from "react";
 import "./faceitPlayer.css";
 
-const FaceitPlayer = ({ player, keyword }) => {
+const FaceitPlayer = ({ player, keyword, error }) => {
   let lvl1 = 0;
   let lvl2 = 501;
   let lvl3 = 751;
@@ -68,7 +68,7 @@ const FaceitPlayer = ({ player, keyword }) => {
       {player && (
         <>
           <h1>{keyword}</h1>
-          <p>Level : {playerLvl}</p>
+          <p>{playerLvl}</p>
           <p>Elo : {playerElo}</p>
           {playerLvl !== "Level 10" ? (
             <p>Elo to Next Level: {eloToNextLevel}</p>
