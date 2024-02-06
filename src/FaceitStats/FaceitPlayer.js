@@ -65,7 +65,7 @@ const FaceitPlayer = ({ player, keyword }) => {
 
   return (
     <div className="faceitPlayer">
-      <h1>Nickname : {keyword}</h1>
+      <h1>{keyword}</h1>
       <p>Level : {playerLvl}</p>
       <p>Elo : {playerElo}</p>
       <p>Elo to Next Level: {eloToNextLevel}</p>

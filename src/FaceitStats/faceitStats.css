@@ -14,6 +14,7 @@
 }
 .hero-component h1 {
   margin-bottom: 10px;
+  font-size: 30px;
 }
 .hero-component {
   gap: 10px;
