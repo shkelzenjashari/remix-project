@@ -1,8 +1,8 @@
 import React from "react";
-import Home from "./Pages/Home";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import FaceitStats from "./FaceitStats/FaceitStats";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import ErrorPage from "./ErrorPage/ErrorPage";
+import FaceitStats from "./FaceitStats/FaceitStats";
+import Home from "./Pages/Home";
 
 function App() {
   return (

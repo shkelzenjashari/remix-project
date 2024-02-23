@@ -1,9 +1,7 @@
 import React, { useState } from "react";
-import "./faceitStats.css";
-import { useEffect } from "react";
-import Navbar from "../Navbar/Navbar.js";
 import FaceitPlayer from "./FaceitPlayer";
 import Loading from "./Loading";
+import "./faceitStats.css";
 
 const FaceitStatsHome = () => {
   const [keyword, setKeyword] = useState("");

@@ -78,7 +78,7 @@ const FaceitPlayer = ({ player, error }) => {
               <p>Elo: {player.games.cs2.faceit_elo}</p>
               {playerLevel.name !== "Level 10" && (
                 <div className="playerElo">
-                  <p>Elo to next level</p>
+                  <p>Elo to </p>
                   <img
                     src={playerLevel.nextLevelImage}
                     alt={`Level ${levels.indexOf(playerLevel) + 2}`}
