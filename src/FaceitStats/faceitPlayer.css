@@ -13,3 +13,27 @@
 .faceitPlayer p {
   font-size: 20px;
 }
+.playerData {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+}
+.playerAvatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+.playerElo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.playerTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}

@@ -3,11 +3,9 @@ import "./faceitStats.css";
 import { useEffect } from "react";
 import Navbar from "../Navbar/Navbar.js";
 import FaceitPlayer from "./FaceitPlayer";
-import Footer from "../Footer/Footer";
-import NavbarFaceit from "./NavbarFaceit";
 import Loading from "./Loading";
 
-const FaceitStats = () => {
+const FaceitStatsHome = () => {
   const [keyword, setKeyword] = useState("");
   const [player, setPlayer] = useState("");
   const [error, setError] = useState("");
@@ -46,10 +44,10 @@ const FaceitStats = () => {
 
   return (
     <>
-      <NavbarFaceit />
       <div className="faceitStats">
         <div className="search">
           <div className="hero-component">
+            <h1 style={{ fontSize: "45px" }}>Faceit Level</h1>
             <h1>Sheno nickname</h1>
             <input
               type="text"
@@ -65,9 +63,8 @@ const FaceitStats = () => {
           <FaceitPlayer player={player} error={error} />
         )}
       </div>
-      <Footer />
     </>
   );
 };
 
-export default FaceitStats;
+export default FaceitStatsHome;

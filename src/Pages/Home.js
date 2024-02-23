@@ -7,6 +7,8 @@ import ContactUs from "../ContactUs/ContactUs";
 import Footer from "../Footer/Footer";
 import PhotoSlider from "../PhotoSlider/PhotoSlider";
 import Reviews from "../Reviews/Reviews";
+import FaceitStatsHome from "../FaceitStats/FaceitStatsHome";
+import ContactUsHome from "../ContactUs/ContactUsHome";
 
 const Home = () => {
   return (
@@ -17,8 +19,8 @@ const Home = () => {
       <AboutUs />
       <CommonQuestions />
       <Reviews />
-      <ContactUs />
-
+      <ContactUsHome />
+      <FaceitStatsHome />
       <Footer />
     </div>
   );
