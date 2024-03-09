@@ -38,6 +38,8 @@ const FaceitStats = () => {
         setKeyword("");
       })
       .catch((error) => {
+        setIsLoading(true);
+        setError(error);
         console.error("There was a problem with the fetch operation:", error);
       });
   };
@@ -48,6 +50,7 @@ const FaceitStats = () => {
       <div className="faceitStats">
         <div className="search">
           <div className="hero-component">
+            <h1 className="levelTitle">Faceit Level</h1>
             <h1>Sheno nickname</h1>
             <input
               type="text"

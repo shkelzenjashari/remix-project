@@ -23,3 +23,14 @@
   align-items: center;
   flex-direction: column;
 }
+.levelTitle {
+  font-size: 43px !important;
+  background-color: rgb(255, 85, 0);
+  padding: 5px;
+  border-radius: 5px;
+}
+@media (min-width: 895px) {
+  .levelTitle {
+    display: none;
+  }
+}

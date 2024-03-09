@@ -25,7 +25,7 @@ const Navbar = () => {
             <a href="#about">Rreth nesh</a>
           </li>
           <li>
-            <a href="#contact">Kontakti</a>
+            <a href="#commonQuestions">Kontakti</a>
           </li>
           <li>
             <Link to="/faceit">Faceit Level</Link>

@@ -7,7 +7,7 @@ const Intro = () => {
       <div className="intro-text">
         <p className="main-text">Remix Gaming Center</p>
         <p>
-          eshte destinacioni i preferuar per te gjithe entuziastet e lojerave ne
+          destinacioni i preferuar per te gjithe entuziastet e lojerave ne
           Kosove dhe ndodhet ne zemer te Prishtines.
         </p>
       </div>

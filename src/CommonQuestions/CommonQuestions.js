@@ -7,7 +7,7 @@ import Arrow from "./Arrow";
 
 const CommonQuestions = () => {
   return (
-    <div className="commonQuestions">
+    <div id="commonQuestions">
       <h1 className="headline">Pytjet me te shpeshta</h1>
       <div className="accordion">
         <Accordion>

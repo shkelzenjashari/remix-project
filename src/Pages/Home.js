@@ -1,8 +1,6 @@
 import React from "react";
 import AboutUs from "../AboutUs/AboutUs";
 import CommonQuestions from "../CommonQuestions/CommonQuestions";
-import ContactUsHome from "../ContactUs/ContactUsHome";
-import FaceitStatsHome from "../FaceitStats/FaceitStatsHome";
 import Footer from "../Footer/Footer";
 import Intro from "../Intro/Intro";
 import Navbar from "../Navbar/Navbar";
@@ -18,8 +16,6 @@ const Home = () => {
       <AboutUs />
       <CommonQuestions />
       <Reviews />
-      <ContactUsHome />
-      <FaceitStatsHome />
       <Footer />
     </div>
   );
